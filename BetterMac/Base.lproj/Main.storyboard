@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="BetterMac" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="BetterMac" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About BetterMac" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Contributors" id="IFt-7I-O31">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="contributors:" target="Voe-Tx-rLC" id="tXX-Nt-elg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Hide BetterMac" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit BetterMac" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="File" id="dMs-cI-mzQ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Edit" id="5QF-Oa-p0T">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Format" id="jxT-CU-nIS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="View" id="H8h-7b-M4v">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BetterMac" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="-58"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="BetterMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="255" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="1DA9F344-D2E5-4D53-878C-218DD6077FC4" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="oga-wd-sYM">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="3v7-wN-0r7"/>
+                                <toolbarItem implicitItemIdentifier="C56280F1-FF10-415F-80D9-27F97C48C9EC" label="Custom View" paletteLabel="Custom View" id="DDU-GS-NHm">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="17"/>
+                                    <size key="maxSize" width="71" height="17"/>
+                                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Fp0-uj-bPS">
+                                        <rect key="frame" x="3" y="14" width="71" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="BetterMac" id="7WV-XK-L3k">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="3v7-wN-0r7"/>
+                                <toolbarItem reference="DDU-GS-NHm"/>
+                                <toolbarItem reference="3v7-wN-0r7"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.5" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="BetterMac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="113"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="NRc-hV-EdU">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="113"/>
+                            </visualEffectView>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-jf-zAs">
+                                <rect key="frame" x="0.0" y="42" width="255" height="61"/>
+                                <subviews>
+                                    <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-jG-c2A" userLabel="Hidden Files">
+                                        <rect key="frame" x="0.0" y="31" width="255" height="30"/>
+                                        <subviews>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a0O-oT-fsY">
+                                                <rect key="frame" x="18" y="7" width="167" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Show hidden files in Finder" id="Zok-Tj-4UQ">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="3Hu-mj-4W2" userLabel="toggleHiddenFiles" customClass="MacToggle" customModule="BetterMac" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="5" width="32" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="9jB-iU-4di"/>
+                                                    <constraint firstAttribute="height" constant="20" id="dGl-Lp-4qh"/>
+                                                </constraints>
+                                            </customView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="a0O-oT-fsY" firstAttribute="centerY" secondItem="3Hu-mj-4W2" secondAttribute="centerY" id="5ab-cp-hPa"/>
+                                            <constraint firstItem="a0O-oT-fsY" firstAttribute="leading" secondItem="KTX-jG-c2A" secondAttribute="leading" constant="20" id="AQA-hP-YMO"/>
+                                            <constraint firstAttribute="height" constant="30" id="H5x-WU-Z1q"/>
+                                            <constraint firstItem="3Hu-mj-4W2" firstAttribute="leading" secondItem="a0O-oT-fsY" secondAttribute="trailing" constant="20" id="djS-jx-5GW"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Hu-mj-4W2" secondAttribute="trailing" constant="20" id="tXN-md-jBd"/>
+                                            <constraint firstItem="a0O-oT-fsY" firstAttribute="centerY" secondItem="KTX-jG-c2A" secondAttribute="centerY" id="zde-ci-Puk"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="egw-FN-pHP">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="21"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gy6-2z-hnm">
+                                                <rect key="frame" x="24" y="-7" width="207" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Update screenshot location" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JVO-cH-UJG">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="updateScreenshot:" target="XfG-lQ-9wD" id="eMC-gw-7FK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gy6-2z-hnm" firstAttribute="centerY" secondItem="egw-FN-pHP" secondAttribute="centerY" id="VgP-tZ-Vq7"/>
+                                            <constraint firstItem="gy6-2z-hnm" firstAttribute="centerX" secondItem="egw-FN-pHP" secondAttribute="centerX" id="Vwz-eA-kUB"/>
+                                            <constraint firstItem="gy6-2z-hnm" firstAttribute="height" secondItem="egw-FN-pHP" secondAttribute="height" id="sb1-YH-JOP"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="egw-FN-pHP" secondAttribute="trailing" id="6Ce-rX-KOq"/>
+                                    <constraint firstItem="egw-FN-pHP" firstAttribute="top" secondItem="KTX-jG-c2A" secondAttribute="bottom" constant="10" id="Cde-CP-bE9"/>
+                                    <constraint firstAttribute="trailing" secondItem="KTX-jG-c2A" secondAttribute="trailing" id="JI4-eV-OBF"/>
+                                    <constraint firstItem="egw-FN-pHP" firstAttribute="leading" secondItem="6cv-jf-zAs" secondAttribute="leading" id="PqU-5o-pyh"/>
+                                    <constraint firstItem="KTX-jG-c2A" firstAttribute="leading" secondItem="6cv-jf-zAs" secondAttribute="leading" id="fWN-qv-KOV"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-Iv-dno">
+                                <rect key="frame" x="38" y="5" width="179" height="32"/>
+                                <buttonCell key="cell" type="bevel" title="Made with ❤ by Justin Leger" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="GKh-vy-U0C">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="creatorLink:" target="XfG-lQ-9wD" id="1lp-NI-oVz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Z01-Iv-dno" secondAttribute="bottom" constant="5" id="5X4-0D-czf"/>
+                            <constraint firstItem="6cv-jf-zAs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="9f1-4h-9DM"/>
+                            <constraint firstAttribute="bottom" secondItem="NRc-hV-EdU" secondAttribute="bottom" id="Cql-Tf-Eij"/>
+                            <constraint firstItem="Z01-Iv-dno" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6cv-jf-zAs" secondAttribute="bottom" constant="5" id="NxU-9x-eFx"/>
+                            <constraint firstItem="NRc-hV-EdU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Qdn-Ks-GN0"/>
+                            <constraint firstItem="6cv-jf-zAs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="Qfo-VS-1HC"/>
+                            <constraint firstAttribute="trailing" secondItem="6cv-jf-zAs" secondAttribute="trailing" id="aYn-Bo-sIt"/>
+                            <constraint firstItem="Z01-Iv-dno" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="cXS-Zc-3wl"/>
+                            <constraint firstItem="NRc-hV-EdU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="epC-fS-Ns1"/>
+                            <constraint firstAttribute="trailing" secondItem="NRc-hV-EdU" secondAttribute="trailing" id="lxW-iI-Adj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hiddenFiles" destination="3Hu-mj-4W2" id="DhR-F5-VSw"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="694.5"/>
+        </scene>
+    </scenes>
+</document>

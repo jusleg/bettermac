@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0149F23210D7637009EAC0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F22210D7637009EAC0F /* AppDelegate.swift */; };
+		F0149F25210D7637009EAC0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F24210D7637009EAC0F /* ViewController.swift */; };
+		F0149F27210D7638009EAC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0149F26210D7638009EAC0F /* Assets.xcassets */; };
+		F0149F2A210D7638009EAC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0149F28210D7638009EAC0F /* Main.storyboard */; };
+		F0149F33210D7758009EAC0F /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F32210D7757009EAC0F /* WindowController.swift */; };
+		F0149F37210D78E1009EAC0F /* Extension+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F36210D78E1009EAC0F /* Extension+NSView.swift */; };
+		F0149F39210D78FD009EAC0F /* MacToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F38210D78FD009EAC0F /* MacToggle.swift */; };
+		F0149F41210D861F009EAC0F /* minimize_all.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F3E210D861F009EAC0F /* minimize_all.scpt */; };
+		F0149F42210D861F009EAC0F /* unminimize_all.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F3F210D861F009EAC0F /* unminimize_all.scpt */; };
+		F0149F43210D861F009EAC0F /* hidden_files_visible.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F40210D861F009EAC0F /* hidden_files_visible.scpt */; };
+		F0149F46210D8942009EAC0F /* hidden_files_hidden.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F45210D8942009EAC0F /* hidden_files_hidden.scpt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F0149F1F210D7637009EAC0F /* BetterMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0149F22210D7637009EAC0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0149F24210D7637009EAC0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0149F26210D7638009EAC0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0149F29210D7638009EAC0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0149F2B210D7638009EAC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0149F2C210D7638009EAC0F /* BetterMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterMac.entitlements; sourceTree = "<group>"; };
+		F0149F32210D7757009EAC0F /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		F0149F36210D78E1009EAC0F /* Extension+NSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+NSView.swift"; path = "../../../../Desktop/Extension+NSView.swift"; sourceTree = "<group>"; };
+		F0149F38210D78FD009EAC0F /* MacToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacToggle.swift; sourceTree = "<group>"; };
+		F0149F3B210D7903009EAC0F /* Extension+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSView.swift"; sourceTree = "<group>"; };
+		F0149F3E210D861F009EAC0F /* minimize_all.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = minimize_all.scpt; sourceTree = "<group>"; };
+		F0149F3F210D861F009EAC0F /* unminimize_all.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = unminimize_all.scpt; sourceTree = "<group>"; };
+		F0149F40210D861F009EAC0F /* hidden_files_visible.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = hidden_files_visible.scpt; sourceTree = "<group>"; };
+		F0149F45210D8942009EAC0F /* hidden_files_hidden.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = hidden_files_hidden.scpt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0149F1C210D7637009EAC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0149F16210D7637009EAC0F = {
+			isa = PBXGroup;
+			children = (
+				F0149F21210D7637009EAC0F /* BetterMac */,
+				F0149F20210D7637009EAC0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0149F20210D7637009EAC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0149F1F210D7637009EAC0F /* BetterMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0149F21210D7637009EAC0F /* BetterMac */ = {
+			isa = PBXGroup;
+			children = (
+				F0149F44210D8625009EAC0F /* Scripts */,
+				F0149F3A210D7903009EAC0F /* MacToggle */,
+				F0149F36210D78E1009EAC0F /* Extension+NSView.swift */,
+				F0149F32210D7757009EAC0F /* WindowController.swift */,
+				F0149F22210D7637009EAC0F /* AppDelegate.swift */,
+				F0149F24210D7637009EAC0F /* ViewController.swift */,
+				F0149F26210D7638009EAC0F /* Assets.xcassets */,
+				F0149F28210D7638009EAC0F /* Main.storyboard */,
+				F0149F2B210D7638009EAC0F /* Info.plist */,
+				F0149F2C210D7638009EAC0F /* BetterMac.entitlements */,
+			);
+			path = BetterMac;
+			sourceTree = "<group>";
+		};
+		F0149F3A210D7903009EAC0F /* MacToggle */ = {
+			isa = PBXGroup;
+			children = (
+				F0149F38210D78FD009EAC0F /* MacToggle.swift */,
+				F0149F3B210D7903009EAC0F /* Extension+NSView.swift */,
+			);
+			path = MacToggle;
+			sourceTree = "<group>";
+		};
+		F0149F44210D8625009EAC0F /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F0149F45210D8942009EAC0F /* hidden_files_hidden.scpt */,
+				F0149F40210D861F009EAC0F /* hidden_files_visible.scpt */,
+				F0149F3E210D861F009EAC0F /* minimize_all.scpt */,
+				F0149F3F210D861F009EAC0F /* unminimize_all.scpt */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0149F1E210D7637009EAC0F /* BetterMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0149F2F210D7638009EAC0F /* Build configuration list for PBXNativeTarget "BetterMac" */;
+			buildPhases = (
+				F0149F1B210D7637009EAC0F /* Sources */,
+				F0149F1C210D7637009EAC0F /* Frameworks */,
+				F0149F1D210D7637009EAC0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetterMac;
+			productName = BetterMac;
+			productReference = F0149F1F210D7637009EAC0F /* BetterMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0149F17210D7637009EAC0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Justin Léger";
+				TargetAttributes = {
+					F0149F1E210D7637009EAC0F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F0149F1A210D7637009EAC0F /* Build configuration list for PBXProject "BetterMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0149F16210D7637009EAC0F;
+			productRefGroup = F0149F20210D7637009EAC0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0149F1E210D7637009EAC0F /* BetterMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0149F1D210D7637009EAC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0149F43210D861F009EAC0F /* hidden_files_visible.scpt in Resources */,
+				F0149F46210D8942009EAC0F /* hidden_files_hidden.scpt in Resources */,
+				F0149F27210D7638009EAC0F /* Assets.xcassets in Resources */,
+				F0149F2A210D7638009EAC0F /* Main.storyboard in Resources */,
+				F0149F42210D861F009EAC0F /* unminimize_all.scpt in Resources */,
+				F0149F41210D861F009EAC0F /* minimize_all.scpt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0149F1B210D7637009EAC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0149F25210D7637009EAC0F /* ViewController.swift in Sources */,
+				F0149F39210D78FD009EAC0F /* MacToggle.swift in Sources */,
+				F0149F37210D78E1009EAC0F /* Extension+NSView.swift in Sources */,
+				F0149F33210D7758009EAC0F /* WindowController.swift in Sources */,
+				F0149F23210D7637009EAC0F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0149F28210D7638009EAC0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0149F29210D7638009EAC0F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0149F2D210D7638009EAC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0149F2E210D7638009EAC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F0149F30210D7638009EAC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BetterMac/BetterMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8CRB65233P;
+				INFOPLIST_FILE = BetterMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = justinleger.BetterMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F0149F31210D7638009EAC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BetterMac/BetterMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8CRB65233P;
+				INFOPLIST_FILE = BetterMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = justinleger.BetterMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0149F1A210D7637009EAC0F /* Build configuration list for PBXProject "BetterMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0149F2D210D7638009EAC0F /* Debug */,
+				F0149F2E210D7638009EAC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0149F2F210D7638009EAC0F /* Build configuration list for PBXNativeTarget "BetterMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0149F30210D7638009EAC0F /* Debug */,
+				F0149F31210D7638009EAC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0149F17210D7637009EAC0F /* Project object */;
+}
