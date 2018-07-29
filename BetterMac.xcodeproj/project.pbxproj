@@ -318,7 +318,7 @@
 				CODE_SIGN_ENTITLEMENTS = BetterMac/BetterMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8CRB65233P;
+				DEVELOPMENT_TEAM = 88US22BS7E;
 				INFOPLIST_FILE = BetterMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,7 +337,7 @@
 				CODE_SIGN_ENTITLEMENTS = BetterMac/BetterMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 8CRB65233P;
+				DEVELOPMENT_TEAM = 88US22BS7E;
 				INFOPLIST_FILE = BetterMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
