@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -89,7 +89,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="BetterMac" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="IQv-IB-iLA">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titleVisibility="hidden" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="255" height="270"/>
@@ -135,17 +135,17 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="BetterMac" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="255" height="113"/>
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="67"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <visualEffectView appearanceType="vibrantDark" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="NRc-hV-EdU">
-                                <rect key="frame" x="0.0" y="0.0" width="255" height="113"/>
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="67"/>
                             </visualEffectView>
-                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-jf-zAs">
-                                <rect key="frame" x="0.0" y="42" width="255" height="61"/>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-jf-zAs">
+                                <rect key="frame" x="0.0" y="27" width="255" height="30"/>
                                 <subviews>
-                                    <customView ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTX-jG-c2A" userLabel="Hidden Files">
-                                        <rect key="frame" x="0.0" y="31" width="255" height="30"/>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="KTX-jG-c2A" userLabel="Hidden Files">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="a0O-oT-fsY">
                                                 <rect key="frame" x="18" y="7" width="167" height="17"/>
@@ -172,45 +172,20 @@
                                             <constraint firstItem="a0O-oT-fsY" firstAttribute="centerY" secondItem="KTX-jG-c2A" secondAttribute="centerY" id="zde-ci-Puk"/>
                                         </constraints>
                                     </customView>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="egw-FN-pHP">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="21"/>
-                                        <subviews>
-                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gy6-2z-hnm">
-                                                <rect key="frame" x="24" y="-7" width="207" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Update screenshot location" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JVO-cH-UJG">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="updateScreenshot:" target="XfG-lQ-9wD" id="eMC-gw-7FK"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="gy6-2z-hnm" firstAttribute="centerY" secondItem="egw-FN-pHP" secondAttribute="centerY" id="VgP-tZ-Vq7"/>
-                                            <constraint firstItem="gy6-2z-hnm" firstAttribute="centerX" secondItem="egw-FN-pHP" secondAttribute="centerX" id="Vwz-eA-kUB"/>
-                                            <constraint firstItem="gy6-2z-hnm" firstAttribute="height" secondItem="egw-FN-pHP" secondAttribute="height" id="sb1-YH-JOP"/>
-                                        </constraints>
-                                    </customView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="egw-FN-pHP" secondAttribute="trailing" id="6Ce-rX-KOq"/>
-                                    <constraint firstItem="egw-FN-pHP" firstAttribute="top" secondItem="KTX-jG-c2A" secondAttribute="bottom" constant="10" id="Cde-CP-bE9"/>
                                     <constraint firstAttribute="trailing" secondItem="KTX-jG-c2A" secondAttribute="trailing" id="JI4-eV-OBF"/>
-                                    <constraint firstItem="egw-FN-pHP" firstAttribute="leading" secondItem="6cv-jf-zAs" secondAttribute="leading" id="PqU-5o-pyh"/>
                                     <constraint firstItem="KTX-jG-c2A" firstAttribute="leading" secondItem="6cv-jf-zAs" secondAttribute="leading" id="fWN-qv-KOV"/>
                                 </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
-                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-Iv-dno">
-                                <rect key="frame" x="38" y="5" width="179" height="32"/>
+                                <rect key="frame" x="38" y="5" width="179" height="17"/>
                                 <buttonCell key="cell" type="bevel" title="Made with ❤ by Justin Leger" bezelStyle="rounded" alignment="center" imageScaling="proportionallyDown" inset="2" id="GKh-vy-U0C">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -224,7 +199,7 @@
                             <constraint firstAttribute="bottom" secondItem="Z01-Iv-dno" secondAttribute="bottom" constant="5" id="5X4-0D-czf"/>
                             <constraint firstItem="6cv-jf-zAs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="9f1-4h-9DM"/>
                             <constraint firstAttribute="bottom" secondItem="NRc-hV-EdU" secondAttribute="bottom" id="Cql-Tf-Eij"/>
-                            <constraint firstItem="Z01-Iv-dno" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6cv-jf-zAs" secondAttribute="bottom" constant="5" id="NxU-9x-eFx"/>
+                            <constraint firstItem="Z01-Iv-dno" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6cv-jf-zAs" secondAttribute="bottom" id="NxU-9x-eFx"/>
                             <constraint firstItem="NRc-hV-EdU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Qdn-Ks-GN0"/>
                             <constraint firstItem="6cv-jf-zAs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="Qfo-VS-1HC"/>
                             <constraint firstAttribute="trailing" secondItem="6cv-jf-zAs" secondAttribute="trailing" id="aYn-Bo-sIt"/>

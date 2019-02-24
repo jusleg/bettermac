@@ -12,12 +12,10 @@
 		F0149F27210D7638009EAC0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0149F26210D7638009EAC0F /* Assets.xcassets */; };
 		F0149F2A210D7638009EAC0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0149F28210D7638009EAC0F /* Main.storyboard */; };
 		F0149F33210D7758009EAC0F /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F32210D7757009EAC0F /* WindowController.swift */; };
-		F0149F37210D78E1009EAC0F /* Extension+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F36210D78E1009EAC0F /* Extension+NSView.swift */; };
 		F0149F39210D78FD009EAC0F /* MacToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0149F38210D78FD009EAC0F /* MacToggle.swift */; };
-		F0149F41210D861F009EAC0F /* minimize_all.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F3E210D861F009EAC0F /* minimize_all.scpt */; };
-		F0149F42210D861F009EAC0F /* unminimize_all.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F3F210D861F009EAC0F /* unminimize_all.scpt */; };
 		F0149F43210D861F009EAC0F /* hidden_files_visible.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F40210D861F009EAC0F /* hidden_files_visible.scpt */; };
 		F0149F46210D8942009EAC0F /* hidden_files_hidden.scpt in Resources */ = {isa = PBXBuildFile; fileRef = F0149F45210D8942009EAC0F /* hidden_files_hidden.scpt */; };
+		F0EF55DC22235C7D0072D74F /* Extension+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EF55DB22235C7D0072D74F /* Extension+NSView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +27,11 @@
 		F0149F2B210D7638009EAC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0149F2C210D7638009EAC0F /* BetterMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BetterMac.entitlements; sourceTree = "<group>"; };
 		F0149F32210D7757009EAC0F /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		F0149F36210D78E1009EAC0F /* Extension+NSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extension+NSView.swift"; path = "../../../../Desktop/Extension+NSView.swift"; sourceTree = "<group>"; };
 		F0149F38210D78FD009EAC0F /* MacToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacToggle.swift; sourceTree = "<group>"; };
 		F0149F3B210D7903009EAC0F /* Extension+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSView.swift"; sourceTree = "<group>"; };
-		F0149F3E210D861F009EAC0F /* minimize_all.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = minimize_all.scpt; sourceTree = "<group>"; };
-		F0149F3F210D861F009EAC0F /* unminimize_all.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = unminimize_all.scpt; sourceTree = "<group>"; };
 		F0149F40210D861F009EAC0F /* hidden_files_visible.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = hidden_files_visible.scpt; sourceTree = "<group>"; };
 		F0149F45210D8942009EAC0F /* hidden_files_hidden.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = hidden_files_hidden.scpt; sourceTree = "<group>"; };
+		F0EF55DB22235C7D0072D74F /* Extension+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +66,7 @@
 			children = (
 				F0149F44210D8625009EAC0F /* Scripts */,
 				F0149F3A210D7903009EAC0F /* MacToggle */,
-				F0149F36210D78E1009EAC0F /* Extension+NSView.swift */,
+				F0EF55DB22235C7D0072D74F /* Extension+NSView.swift */,
 				F0149F32210D7757009EAC0F /* WindowController.swift */,
 				F0149F22210D7637009EAC0F /* AppDelegate.swift */,
 				F0149F24210D7637009EAC0F /* ViewController.swift */,
@@ -96,8 +92,6 @@
 			children = (
 				F0149F45210D8942009EAC0F /* hidden_files_hidden.scpt */,
 				F0149F40210D861F009EAC0F /* hidden_files_visible.scpt */,
-				F0149F3E210D861F009EAC0F /* minimize_all.scpt */,
-				F0149F3F210D861F009EAC0F /* unminimize_all.scpt */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -164,8 +158,6 @@
 				F0149F46210D8942009EAC0F /* hidden_files_hidden.scpt in Resources */,
 				F0149F27210D7638009EAC0F /* Assets.xcassets in Resources */,
 				F0149F2A210D7638009EAC0F /* Main.storyboard in Resources */,
-				F0149F42210D861F009EAC0F /* unminimize_all.scpt in Resources */,
-				F0149F41210D861F009EAC0F /* minimize_all.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0149F25210D7637009EAC0F /* ViewController.swift in Sources */,
+				F0EF55DC22235C7D0072D74F /* Extension+NSView.swift in Sources */,
 				F0149F39210D78FD009EAC0F /* MacToggle.swift in Sources */,
-				F0149F37210D78E1009EAC0F /* Extension+NSView.swift in Sources */,
 				F0149F33210D7758009EAC0F /* WindowController.swift in Sources */,
 				F0149F23210D7637009EAC0F /* AppDelegate.swift in Sources */,
 			);
